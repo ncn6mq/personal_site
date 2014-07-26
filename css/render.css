@@ -311,7 +311,7 @@ legend h2 {
  */
 
 #publications {
-	background: url(../assets/secondBG.jpg) 50% 0 no-repeat fixed;
+	background: url(../assets/backgrounds/secondBG.jpg) 50% 0 no-repeat fixed;
 	color: #222;
 	min-height: 1200px;
   /*height: 100%;*/
@@ -330,7 +330,7 @@ legend h2 {
 
 #projects {
   background-color: #333;
-  background: url(../assets/firstBG.jpg);
+  background: url(../assets/backgrounds/firstBG.jpg);
   margin: 0 auto;
   /*overflow: hidden;*/
   padding: 0;
@@ -390,7 +390,7 @@ legend h2 {
  */
 
 #photography {
-	background: url(../assets/thirdBG.jpg) 50% 0 no-repeat fixed;
+	background: url(../assets/backgrounds/thirdBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	min-height: 1000px;
   height: 100%;
@@ -456,7 +456,7 @@ note : this will break bootstrap fluid and responsive.css
 */
 
 .bg {
-	background: url(../assets/objects.png) top left no-repeat fixed;
+	background: url(../assets/backgrounds/objects.png) top left no-repeat fixed;
 	height: 1200px;
 	margin: 0 auto;
 	padding: 0px;
@@ -468,7 +468,7 @@ note : this will break bootstrap fluid and responsive.css
 	overflow:hidden;
 }
 .bg2 {
-	background: url(../assets/objects2.png) top left no-repeat fixed;
+	background: url(../assets/backgrounds/objects2.png) top left no-repeat fixed;
 	height: 1400px;
 	margin: 0 auto;
 	padding: 0;
