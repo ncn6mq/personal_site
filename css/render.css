@@ -1,0 +1,494 @@
+@charset "utf-8";
+/*
+{wrapbootstrap} - Portfolio Igniter 1.1
+*/
+
+
+/*************************************************************************************************
+ * [1] Global Styles
+ */
+
+body * {
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-weight:300;
+	font-size:14pt;
+	line-height:18pt;
+}
+
+p a {
+  color:#000000;
+  text-decoration:underline;
+}
+
+p a:hover {
+  color:#CCC;
+  text-decoration:none;
+}
+
+.btn i {
+  margin-right: .7em;
+  color: white !important;
+}
+
+p a.btn {
+  text-decoration:none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color:#000;
+}
+
+h1 {
+	font-size:48pt;
+	font-weight:300;
+	line-height:60pt;
+}
+
+h2 {
+	font-size:18pt;
+	font-weight:300;
+	line-height:24pt;
+}
+
+h3 {
+	font-weight: 300;
+	font-size:17pt;
+	font-style:italic;
+}
+
+h4 {
+	font-size:12pt;
+	font-style:italic;
+}
+
+h5 {
+	font-size:11pt;
+	font-weight:normal;
+}
+
+/* colors */
+.red { background-color: #900 !important; }
+.green { background-color: #090 !important;}
+.blue { background-color: #009 !important; }
+
+
+hr {
+	margin: 5px 0;
+  opacity: 0.1;
+  -moz-opacity: 0.1;
+  -webkit-opacity: 0.1;
+}
+
+.tooltip-test {
+	text-decoration: none;
+	margin: 0;
+}
+
+.tooltip-test img {
+	position: relative;
+	top: 8px;
+}
+
+/*************************************************************************************************
+ * [2] Navbar and Page header positioning
+ */
+
+.story {
+  margin: 0 auto;
+  margin-top:40px;
+}
+
+.title {
+	margin-left: 1em;
+	margin-bottom: 40px;
+}
+
+.title p, .title h2, .title h3 {
+	margin-left: 2em;
+}
+
+.title .code {
+  font-family: "courier new";
+  font-style: italic;
+}
+
+.subnav {
+  margin-bottom: 0;
+}
+
+
+
+.nav li a {
+  color: #f5f5f5 !important;
+  text-shadow: none !important;
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.nav li.active a {
+  background-color: #c70000 !important;
+}
+
+.nav li a:hover {
+  background-color: #500003 !important;
+}
+
+/* elements */
+span.rnd {
+	font-size: 14px;
+	background-color: rgba(0,0,0,0.5);
+	color: #bbb;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	width: 44px;
+	height: 44px;
+	text-indent: 8px;
+	line-height: 44px;
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 2px;
+	font-weight: normal;
+	text-transform: lowercase;
+	font-weight:800;
+	font-style: italic;
+	text-shadow: 1px 2px 0 rgba(0,0,0,0.075);
+	-webkit-box-shadow: 1px 2px 0 0 rgba(0,0,0,0.075);
+	-moz-box-shadow: 1px 2px 0 0 rgba(0,0,0,0.075);
+}
+
+
+/*************************************************************************************************
+ * [3] The homepage
+ */
+
+
+#home {
+	/*)background:url(../assets/firstBG.jpg) 50% -75px no-repeat fixed;*/
+	color: #FFF;
+	height: 1200px;
+	padding: 50px 0 0 0;
+}
+
+
+#home .title h3 {
+  margin-left: 3em;
+  font-size: 1.4em;
+}
+
+#home ul.navi {
+  list-style-type:none;
+
+  margin: 0 -1px 2em -1px;
+
+  padding:0;
+}
+
+#home ul.navi li a {
+
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  display:block;
+  border-left: 1px solid #A00;
+  border-right: 1px solid #A00;
+
+  color: #000;
+  background-color: rgba(0, 0, 0, 0);
+
+  padding: .5em 1em;
+  padding-right: 0;
+
+}
+
+#home ul li a:hover {
+  background-color: #A00;
+  color: white;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  text-decoration: none;
+}
+
+#home h2, #home h3, #home h4 {
+  color: #900;
+}
+
+#home a {
+  text-decoration: none;
+  color: #850000;
+}
+
+#home a:hover {
+  text-decoration: underline;
+  color: #c70000;
+  background-color: #fff8f8;
+}
+
+#home .portrait {
+	/*margin-right:1em;*/
+}
+
+.slash {
+  display: none;
+}
+
+legend {
+	margin-bottom: 14px;
+	color: white;
+	background-color:#900;
+	
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+legend h2 {
+	color: white;
+	font-weight:bold;
+	padding-left: 1em;
+}
+
+/*************************************************************************************************
+ * [4] Resume
+ */
+
+#resume {
+  background-color: #222;
+  color: #333;
+  height: 1000px;
+  margin: 0 auto;
+  overflow:hidden;
+  padding: 0;
+
+  margin: 0 auto;
+  padding: 0px 0 200px 0;
+}
+
+#resume .container-fluid {
+  padding-top: 0px;
+}
+
+#work-experience .row {
+  padding-left: 1em;
+}
+
+#work-experience ul {
+  padding-left: 1em;
+  padding-bottom: .1em;
+  margin-top: .5em;
+}
+
+#work-experience ul li, #education ul li {
+  display: list-item !important;
+  padding-bottom: .1em;
+}
+
+#work-experience .label, #education .label {
+  font-size: .9em;
+  float: right;
+  position: relative;
+  left: 9px;
+  padding: .5em;
+  margin-right: 1.5em;
+  cursor: default;
+}
+
+.smallpad {
+  padding: 10px !important;
+  color: white;
+}
+
+.smallpad h1, .smallpad h2, .smallpad h3, .smallpad h4, .smallpad h5, .smallpad h6 {
+  color: white;
+}
+
+/*************************************************************************************************
+ * [5] Publications & Patents
+ */
+
+#publications {
+	background: url(../assets/secondBG.jpg) 50% 0 no-repeat fixed;
+	color: #222;
+	min-height: 1200px;
+  /*height: 100%;*/
+	/*overflow: hidden;*/
+	/*padding: 0;*/
+
+}
+
+#publications h1, #publications h2, #publications h3, #publications h4 {
+  color: white;
+}
+
+/*************************************************************************************************
+ * [7] Projects
+ */
+
+#projects {
+  background-color: #333;
+  background: url(../assets/firstBG.jpg);
+  margin: 0 auto;
+  /*overflow: hidden;*/
+  padding: 0;
+  min-height: 1100px;
+  /*min-height: 1100px;*/
+  /*height: 100%;*/
+  /*padding: 40px 0 100px 0;*/
+
+}
+#projects p, #projects h1, #projects h2, #projects h3, #projects h4, #projects h5, #projects h6 {color:#FFF;}
+#projects h2 {font-weight:300;}
+
+.project-description {
+	background-color: #666;
+
+	margin-bottom: 25px;
+	padding: 2px;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+	border: 2px solid #300;
+
+}
+
+.project-description .well {
+	margin: 0;
+	/*margin-left: -20px;*/
+	color: #000;
+	border: 1px solid orange;
+	min-height: 155px;
+}
+
+.project-description img {
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+
+}
+
+.project-description .btn {
+	margin: 0.8em 1em;
+
+}
+
+.project-description .well p {
+	color: #000 !important;
+}
+
+
+
+
+/*************************************************************************************************
+ * [7] Photography
+ */
+
+#photography {
+	background: url(../assets/thirdBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	min-height: 1000px;
+  height: 100%;
+	padding: 60px 0 0 0;
+}
+
+#photography .story {
+	margin-top: 20px;
+}
+
+#photography img {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+#photography h2 {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+/*************************************************************************************************
+ * [5] Contact
+ */
+
+#contact {
+	background: #8a0600;
+	height: 700px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+
+#contact h1, #contact h2 {
+  color: white;
+}
+
+#contact h2 {
+  margin-left: 1em;
+}
+
+#contact p {
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.row {
+	margin-left: 0 !important;
+}
+
+#column-1 [class*="span"] {
+	margin-left: 0 !important;
+}
+
+/* objects */
+
+/*
+you can add floating object in to design :
+
+<div class="bg"></div>
+<div class="bg2"></div>
+
+note : this will break bootstrap fluid and responsive.css
+*/
+
+.bg {
+	background: url(../assets/objects.png) top left no-repeat fixed;
+	height: 1200px;
+	margin: 0 auto;
+	padding: 0px;
+	position: absolute;
+	left:0px;
+	;
+	width: 800px;
+	z-index: 1;
+	overflow:hidden;
+}
+.bg2 {
+	background: url(../assets/objects2.png) top left no-repeat fixed;
+	height: 1400px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	left:-5px;
+	width: 1200px;
+	z-index: 1;
+	overflow:hidden;
+	top: 1379px;
+}
+
+
+.footer {
+  background:#333333;
+  padding: 14px 15px 15px;
+  margin-bottom: 0;
+  height: 200px;
+}
+
+.footer p {font-size:11pt;}
+.footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, footer h6 {
+  color:#222;
+}
