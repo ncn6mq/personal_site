@@ -29,17 +29,16 @@
         $('#projects').parallax("50%", 4500, 0, true);
         $('#photography').parallax("50%", 5450, 0.2, true);
     })
-    $('#navbar').scrollspy();
 
+    $('#navbar').scrollspy();
     $(".collapse").collapse();
 
     $(document).ready(function () {
+        console.log("Dom ready");
         $('#page').fadeTo(1500, 1);
     });
 
-
     $(document).scroll(function(){
-        console.log("scrolling");
         // If has not activated (has no attribute "data-top"
         if (!$('.subnav').attr('data-top')) {
             // If already fixed, then do nothing
@@ -53,7 +52,6 @@
         if ($('.subnav').attr('data-top') - ($('.subnav').outerHeight()) < $(this).scrollTop()) {
             $('.subnav').addClass('navbar-fixed-top');
         } else {
-            console.log("unfixed" );
             $('.subnav').removeClass('navbar-fixed-top');
         }
     });
