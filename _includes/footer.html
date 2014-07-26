@@ -1,3 +1,71 @@
+<footer class="footer">
+    <div class="row">
+        <div class="span2"><a class="btn btn-inverse" href=""><i class="icon-bookmark"></i>Bookmark</a></div>
+
+        <div class="span3">
+            <p style="color:gray"> All Content &copy; Anthony Erlinger (aerlinger.com) 2012</p>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    $(document).ready(function () {
+        $('.navi').localScroll(800);
+        RepositionNav();
+        $(window).resize(function () {
+            RepositionNav();
+        });
+        // .parallax(xPosition, adjuster, inertia, outerHeight) options:
+        // xPosition - Horizontal position of the element.
+        // adjuster - y position to start from.
+        // inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling.
+        // outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport.
+        $('#home').parallax("50%", 0, 0.1, true);
+        $('#resume').parallax("50%", 0, 0.1, true);
+        $('#publications').parallax("50%", 3600, 0.4, true);
+        $('.bg').parallax("5%", 3000, 0.8, true);
+        $('.bg2').parallax("30%", 3500, 0.8, true);
+        $('#projects').parallax("50%", 4500, 0, true);
+        $('#photography').parallax("50%", 5450, 0.2, true);
+    })
+    $('#navbar').scrollspy();
+
+    $(".collapse").collapse();
+
+    $(document).ready(function () {
+        $('#page').fadeTo(1500, 1);
+    });
+
+
+    $(document).scroll(function(){
+        console.log("scrolling");
+        // If has not activated (has no attribute "data-top"
+        if (!$('.subnav').attr('data-top')) {
+            // If already fixed, then do nothing
+            if ($('.subnav').hasClass('subnav-fixed')) return;
+
+            // Remember top position
+            var offset = $('.subnav').offset();
+            $('.subnav').attr('data-top', offset.top + $('.subnav').height());
+        }
+
+        if ($('.subnav').attr('data-top') - ($('.subnav').outerHeight()) < $(this).scrollTop()) {
+            $('.subnav').addClass('navbar-fixed-top');
+        } else {
+            console.log("unfixed" );
+            $('.subnav').removeClass('navbar-fixed-top');
+        }
+    });
+
+</script>
+
+
+<!-- ORIGINAL JEKYLL THEME: -->
+
+
+<!--
+
 <footer class="site-footer">
 
   <div class="wrap">
@@ -59,3 +127,5 @@
   </div>
 
 </footer>
+
+-->
