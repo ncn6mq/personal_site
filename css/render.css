@@ -3,29 +3,28 @@
 {wrapbootstrap} - Portfolio Igniter 1.1
 */
 
-
 /*************************************************************************************************
  * [1] Global Styles
  */
 
 body * {
-	font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 p {
-	font-weight:300;
-	font-size:14pt;
-	line-height:18pt;
+  font-weight: 300;
+  font-size: 14pt;
+  line-height: 18pt;
 }
 
 p a {
-  color:#000000;
-  text-decoration:underline;
+  color: #000000;
+  text-decoration: underline;
 }
 
 p a:hover {
-  color:#CCC;
-  text-decoration:none;
+  color: #CCC;
+  text-decoration: none;
 }
 
 .btn i {
@@ -34,62 +33,69 @@ p a:hover {
 }
 
 p a.btn {
-  text-decoration:none !important;
+  text-decoration: none !important;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  color:#000;
+  color: #000;
 }
 
 h1 {
-	font-size:48pt;
-	font-weight:300;
-	line-height:60pt;
+  font-size: 48pt;
+  font-weight: 300;
+  line-height: 60pt;
 }
 
 h2 {
-	font-size:18pt;
-	font-weight:300;
-	line-height:24pt;
+  font-size: 18pt;
+  font-weight: 300;
+  line-height: 24pt;
 }
 
 h3 {
-	font-weight: 300;
-	font-size:17pt;
-	font-style:italic;
+  font-weight: 300;
+  font-size: 17pt;
+  font-style: italic;
 }
 
 h4 {
-	font-size:12pt;
-	font-style:italic;
+  font-size: 12pt;
+  font-style: italic;
 }
 
 h5 {
-	font-size:11pt;
-	font-weight:normal;
+  font-size: 11pt;
+  font-weight: normal;
 }
 
 /* colors */
-.red { background-color: #900 !important; }
-.green { background-color: #090 !important;}
-.blue { background-color: #009 !important; }
+.red {
+  background-color: #900 !important;
+}
 
+.green {
+  background-color: #090 !important;
+}
+
+.blue {
+  background-color: #009 !important;
+}
 
 hr {
-	margin: 5px 0;
+  margin: 5px 0;
   opacity: 0.1;
   -moz-opacity: 0.1;
   -webkit-opacity: 0.1;
 }
 
 .tooltip-test {
-	text-decoration: none;
-	margin: 0;
+  text-decoration: none;
+  margin: 0;
 }
 
 .tooltip-test img {
-	position: relative;
-	top: 8px;
+  position: relative;
+  top: 8px;
 }
 
 /*************************************************************************************************
@@ -98,16 +104,16 @@ hr {
 
 .story {
   margin: 0 auto;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
 .title {
-	margin-left: 1em;
-	margin-bottom: 40px;
+  margin-left: 1em;
+  margin-bottom: 40px;
 }
 
 .title p, .title h2, .title h3 {
-	margin-left: 2em;
+  margin-left: 2em;
 }
 
 .title .code {
@@ -118,8 +124,6 @@ hr {
 .subnav {
   margin-bottom: 0;
 }
-
-
 
 .nav li a {
   color: #f5f5f5 !important;
@@ -138,40 +142,37 @@ hr {
 
 /* elements */
 span.rnd {
-	font-size: 14px;
-	background-color: rgba(0,0,0,0.5);
-	color: #bbb;
-	border-radius: 50px;
-	-moz-border-radius: 50px;
-	width: 44px;
-	height: 44px;
-	text-indent: 8px;
-	line-height: 44px;
-	position: absolute;
-	margin-top: 8px;
-	margin-left: 2px;
-	font-weight: normal;
-	text-transform: lowercase;
-	font-weight:800;
-	font-style: italic;
-	text-shadow: 1px 2px 0 rgba(0,0,0,0.075);
-	-webkit-box-shadow: 1px 2px 0 0 rgba(0,0,0,0.075);
-	-moz-box-shadow: 1px 2px 0 0 rgba(0,0,0,0.075);
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #bbb;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  text-indent: 8px;
+  line-height: 44px;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 2px;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-weight: 800;
+  font-style: italic;
+  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.075);
 }
-
 
 /*************************************************************************************************
  * [3] The homepage
  */
 
-
 #home {
-	/*)background:url(../assets/firstBG.jpg) 50% -75px no-repeat fixed;*/
-	color: #FFF;
-	height: 1200px;
-	padding: 50px 0 0 0;
+  /*)background:url(../assets/firstBG.jpg) 50% -75px no-repeat fixed;*/
+  color: #FFF;
+  height: 1200px;
+  padding: 50px 0 0 0;
 }
-
 
 #home .title h3 {
   margin-left: 3em;
@@ -179,11 +180,11 @@ span.rnd {
 }
 
 #home ul.navi {
-  list-style-type:none;
+  list-style-type: none;
 
   margin: 0 -1px 2em -1px;
 
-  padding:0;
+  padding: 0;
 }
 
 #home ul.navi li a {
@@ -193,7 +194,7 @@ span.rnd {
   text-decoration: none;
   text-transform: uppercase;
 
-  display:block;
+  display: block;
   border-left: 1px solid #A00;
   border-right: 1px solid #A00;
 
@@ -229,7 +230,7 @@ span.rnd {
 }
 
 #home .portrait {
-	/*margin-right:1em;*/
+  /*margin-right:1em;*/
 }
 
 .slash {
@@ -237,19 +238,19 @@ span.rnd {
 }
 
 legend {
-	margin-bottom: 14px;
-	color: white;
-	background-color:#900;
-	
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
+  margin-bottom: 14px;
+  color: white;
+  background-color: #900;
+
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 
 legend h2 {
-	color: white;
-	font-weight:bold;
-	padding-left: 1em;
+  color: white;
+  font-weight: bold;
+  padding-left: 1em;
 }
 
 /*************************************************************************************************
@@ -261,7 +262,7 @@ legend h2 {
   color: #333;
   height: 1000px;
   margin: 0 auto;
-  overflow:hidden;
+  overflow: hidden;
   padding: 0;
 
   margin: 0 auto;
@@ -311,12 +312,12 @@ legend h2 {
  */
 
 #publications {
-	background: url(../assets/backgrounds/secondBG.jpg) 50% 0 no-repeat fixed;
-	color: #222;
-	min-height: 1200px;
+  background: url(../assets/backgrounds/secondBG.jpg) 50% 0 no-repeat fixed;
+  color: #222;
+  min-height: 1200px;
   /*height: 100%;*/
-	/*overflow: hidden;*/
-	/*padding: 0;*/
+  /*overflow: hidden;*/
+  /*padding: 0;*/
 
 }
 
@@ -340,29 +341,35 @@ legend h2 {
   /*padding: 40px 0 100px 0;*/
 
 }
-#projects p, #projects h1, #projects h2, #projects h3, #projects h4, #projects h5, #projects h6 {color:#FFF;}
-#projects h2 {font-weight:300;}
+
+#projects p, #projects h1, #projects h2, #projects h3, #projects h4, #projects h5, #projects h6 {
+  color: #FFF;
+}
+
+#projects h2 {
+  font-weight: 300;
+}
 
 .project-description {
-	background-color: #666;
+  background-color: #666;
 
-	margin-bottom: 25px;
-	padding: 2px;
-	
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	
-	border: 2px solid #300;
+  margin-bottom: 25px;
+  padding: 2px;
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+
+  border: 2px solid #300;
 
 }
 
 .project-description .well {
-	margin: 0;
-	/*margin-left: -20px;*/
-	color: #000;
-	border: 1px solid orange;
-	min-height: 155px;
+  margin: 0;
+  /*margin-left: -20px;*/
+  color: #000;
+  border: 1px solid orange;
+  min-height: 155px;
 }
 
 .project-description img {
@@ -374,31 +381,28 @@ legend h2 {
 }
 
 .project-description .btn {
-	margin: 0.8em 1em;
+  margin: 0.8em 1em;
 
 }
 
 .project-description .well p {
-	color: #000 !important;
+  color: #000 !important;
 }
-
-
-
 
 /*************************************************************************************************
  * [7] Photography
  */
 
 #photography {
-	background: url(../assets/backgrounds/thirdBG.jpg) 50% 0 no-repeat fixed;
-	color: white;
-	min-height: 1000px;
+  background: url(../assets/backgrounds/thirdBG.jpg) 50% 0 no-repeat fixed;
+  color: white;
+  min-height: 1000px;
   height: 100%;
-	padding: 60px 0 0 0;
+  padding: 60px 0 0 0;
 }
 
 #photography .story {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 #photography img {
@@ -417,10 +421,10 @@ legend h2 {
  */
 
 #contact {
-	background: #8a0600;
-	height: 700px;
-	margin: 0 auto;
-	padding: 40px 0 0 0;
+  background: #8a0600;
+  height: 700px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
 }
 
 #contact h1, #contact h2 {
@@ -437,11 +441,11 @@ legend h2 {
 }
 
 .row {
-	margin-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 #column-1 [class*="span"] {
-	margin-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 /* objects */
@@ -456,39 +460,41 @@ note : this will break bootstrap fluid and responsive.css
 */
 
 .bg {
-	background: url(../assets/backgrounds/objects.png) top left no-repeat fixed;
-	height: 1200px;
-	margin: 0 auto;
-	padding: 0px;
-	position: absolute;
-	left:0px;
-	;
-	width: 800px;
-	z-index: 1;
-	overflow:hidden;
-}
-.bg2 {
-	background: url(../assets/backgrounds/objects2.png) top left no-repeat fixed;
-	height: 1400px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	left:-5px;
-	width: 1200px;
-	z-index: 1;
-	overflow:hidden;
-	top: 1379px;
+  background: url(../assets/backgrounds/objects.png) top left no-repeat fixed;
+  height: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  position: absolute;
+  left: 0px;;
+  width: 800px;
+  z-index: 1;
+  overflow: hidden;
 }
 
+.bg2 {
+  background: url(../assets/backgrounds/objects2.png) top left no-repeat fixed;
+  height: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  left: -5px;
+  width: 1200px;
+  z-index: 1;
+  overflow: hidden;
+  top: 1379px;
+}
 
 .footer {
-  background:#333333;
+  background: #333333;
   padding: 14px 15px 15px;
   margin-bottom: 0;
   height: 200px;
 }
 
-.footer p {font-size:11pt;}
+.footer p {
+  font-size: 11pt;
+}
+
 .footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, footer h6 {
-  color:#222;
+  color: #222;
 }
