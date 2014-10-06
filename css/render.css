@@ -168,10 +168,51 @@ span.rnd {
  */
 
 #home {
-  /*)background:url(../assets/firstBG.jpg) 50% -75px no-repeat fixed;*/
   color: #FFF;
-  height: 1200px;
-  padding: 50px 0 0 0;
+  position: relative;
+  height: 100%;
+}
+
+#github {
+  /*float: left;*/
+}
+
+#linkedin {
+  /*margin-left: 20px;*/
+  margin-left: 10px !important;
+}
+
+.sublinks {
+  width: 100%;
+  display: table;
+}
+
+.social-links li {
+  display: inline;
+  opacity: 0.5;
+}
+
+.social-links li:hover {
+  background: none !important;
+  text-decoration: none !important;
+  opacity: 1;
+}
+
+.social-links li a:hover {
+  text-decoration: none !important;
+  background: none !important;
+}
+
+.social-links {
+  display: table;
+  list-style-type: none;
+  margin: auto;
+}
+
+.social {
+  /*display: block;*/
+  width: 30px;
+  height: auto;
 }
 
 #home .title h3 {
@@ -206,7 +247,7 @@ span.rnd {
 
 }
 
-#home ul li a:hover {
+#home ul.navi li a:hover {
   background-color: #A00;
   color: white;
   border-left: 1px solid #000;

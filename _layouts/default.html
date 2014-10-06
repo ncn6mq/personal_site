@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html>
 
-    {% include head.html %}
+{% include head.html %}
 
-    <body data-spy="scroll" data-offset="10" id="page">
+<body data-spy="scroll" data-offset="10" id="page">
 
-        {{ content }}
+<section id="home">
+  <div class="container-fluid">
+    <div class="story">
 
-        {% include footer.html %}
+      <div class="container">
 
-    </body>
+        <div class="row-fluid">
+          <div class="title">
+            <h1>Anthony Erlinger</h1>
+            <!--<h2>Converting the impossible to possible in <span class="code">O(log(n))</span> time.</h2>-->
+            <h3>Portfolio site of a developer and technology enthusiast.</h3>
+          </div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span3">
+            <a class="thumbnail portrait" title="Description of image">
+              <img src="assets/aerlinger.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="span2">
+            <ul class="navi">
+              <li>
+                <a href="assets/anthony_erlinger_resume.pdf" target="_blank"> <span class="slash">//</span> Resume</a>
+                <a href="#resume">Skillsets</a>
+                <!--<a href="#publications">Publications</a>-->
+                <a href="#projects">Projects</a>
+                <!--<a href="#photography">Photography</a>-->
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+
+            <div class="sublinks">
+              <ul class="social-links">
+                <li class="github">
+                  <a href="https://github.com/Aerlinger" target="_blank">
+                    <img src="assets/github.png" id="github" class="social" height="50px" width="50px" alt="Github"/>
+                  </a>
+                </li>
+
+                <li class="linkedin">
+                  <a href="https://www.linkedin.com/in/aerlinger/" target="_blank">
+                    <img src="assets/linkedin.png" id="linkedin" class="social" alt="LinkedIn"/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          {{ content }}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %}
+{% include footer.html %}
+{% endcomment %}
+
+</body>
 </html>
