@@ -57,6 +57,10 @@ ul.post-list li {
   padding-right: 15px;
 }
 
+ul.post-list li:first-child {
+  border-top: 1px solid lightgrey;
+}
+
 ul.post-list li:nth-child(even) {
   background-color: #fafafa !important;
 }
@@ -246,6 +250,7 @@ span.rnd {
 }
 
 #home.sub-page .title {
+  padding-top: 60px;
   margin-left: 0;
 }
 
@@ -468,12 +473,12 @@ legend h2 {
  */
 
 #projects {
-  background-color: #333;
-  background: url(../assets/backgrounds/firstBG.jpg);
-  margin: 0 auto;
+  /*background-color: #333;*/
+  /*background: url(../assets/backgrounds/firstBG.jpg);*/
+  /*margin: 0 auto;*/
   /*overflow: hidden;*/
-  padding: 0;
-  min-height: 1100px;
+  /*padding: 0;*/
+  /*min-height: 1100px;*/
   /*min-height: 1100px;*/
   /*height: 100%;*/
   /*padding: 40px 0 100px 0;*/

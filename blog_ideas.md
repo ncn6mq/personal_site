@@ -1,2 +1,7 @@
 - Managing migrations in ActiveRecord
-- 
+- Horizontal vs. Vertical Complexity in Software (and engineering in general)
+- 10 things I wish I would have known before I started to learn software
+- Know thy environment
+- Readmes are NOT a substitute for proper documentation
+- Managing a legacy schema with attr_deprecated
+- The 10 worst errors messsages of all time

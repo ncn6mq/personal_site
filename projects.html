@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+<div id="projects" class="span10 page">
+  <h2 class="page-heading">Projects</h2>
+
+  <ul class="post-list">
+    {% for project in site.projects %}
+    <li>
+      <h4><a class="post-link" href="{{ project.url | prepend: project.baseurl }}">{{ project.title }}</a></h4>
+
+      <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <!--<p class="rss-subscribe">-->
+    <!--subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>-->
+  <!--</p>-->
+</div>
