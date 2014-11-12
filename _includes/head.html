@@ -1,41 +1,48 @@
 <head>
-    <title>Anthony Erlinger</title>
+  <title>Anthony Erlinger</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{{ site.description }}">
 
-    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <link href="/css/render.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/render-responsive.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/render.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/blog.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="stylesheet" href="/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="/css/jquery.lightbox-0.5.css" media="screen"/>
-    <!--<link href="css/resume.css" media="all" rel="stylesheet" type="text/css" class="resume-style">-->
+  <link rel="stylesheet" href="/css/bootstrap-responsive.css">
+  <link rel="stylesheet" href="/css/jquery.lightbox-0.5.css" media="screen"/>
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.parallax-1.1.js"></script>
-    <script type="text/javascript" src="/js/bootstrap-scrollspy.js"></script>
-    <script type="text/javascript" src="/js/bootstrap-collapse.js"></script>
-    <script type="text/javascript" src="/js/jquery.localscroll-1.2.7-min.js"></script>
-    <script type="text/javascript" src="/js/jquery.scrollTo-1.4.2-min.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.parallax-1.1.js"></script>
+  <script type="text/javascript" src="/js/bootstrap-scrollspy.js"></script>
+  <script type="text/javascript" src="/js/bootstrap-collapse.js"></script>
+  <script type="text/javascript" src="/js/jquery.localscroll-1.2.7-min.js"></script>
+  <script type="text/javascript" src="/js/jquery.scrollTo-1.4.2-min.js"></script>
 
 
-    <script type="text/javascript">
-        <!--
-        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) { location.replace("http://augustinas.eu/dev/4/mobile.html"); }
-        //-->
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script type="text/javascript">
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      location.replace("http://augustinas.eu/dev/4/mobile.html");
+    }
 
-        ga('create', 'UA-53238519-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-53238519-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>

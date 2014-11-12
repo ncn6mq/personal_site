@@ -1,0 +1,8 @@
+#blog .post-list {
+  margin-left: 0;
+}
+
+#blog .post-meta {
+  color: black;
+  float: right;
+}
