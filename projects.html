@@ -5,17 +5,27 @@ layout: page
 <div id="projects" class="span10 page">
   <h2 class="page-heading">Projects</h2>
 
-  <ul class="post-list">
+  <ul>
     {% for project in site.projects %}
-    <li>
-      <h4><a class="post-link" href="{{ project.url | prepend: project.baseurl }}">{{ project.title }}</a></h4>
+    <li class="project-list">
+      <img width="150px" height="150px" class="project-image" src="/assets/projects/{{ project.image }}">
 
-      <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
+      <h4>
+        <a class="project-title" href="{{ project.url | prepend: project.baseurl }}">
+          {{ project.title }}
+        </a>
+      </h4>
+
+      <p class="project-link" href="{{ project.link }}">link &raquo;</p>
+
+      <span class="project-meta">
+        {{ project.date | date: "%b %-d, %Y" }}
+      </span>
+
+      <p class="project-description">
+        {{ project.description }}
+      </p>
     </li>
     {% endfor %}
   </ul>
-
-  <!--<p class="rss-subscribe">-->
-    <!--subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>-->
-  <!--</p>-->
 </div>

@@ -1,5 +1,6 @@
 ---
 layout: project
-title:  "Physics Academy"
-image:   physics_academy.jpg
+title:  Newton
+image:  newton.jpg
+link: github.com/aerlinger/newton
 ---
