@@ -1,16 +1,21 @@
 ---
-layout: default
+layout: page
+title: Blog
 ---
-<div class="post">
 
+<div class="post span10 page">
   <header class="post-header">
-    <h1>{{ page.title }}</h1>
+    <h2 id="blog_title">{{ page.blog_title }}</h2>
     <p class="meta">
-      {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+      Posted {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
   </header>
 
+  <hr/>
+
   <article class="post-content">
-  {{ content }}
+    {{ content }}
   </article>
+
+  <hr/>
 </div>

@@ -4,5 +4,39 @@
 
 #blog .post-meta {
   color: black;
-  float: right;
+  /*float: right;*/
+}
+
+#blog_title {
+  display: inline-block;
+  margin: 0;
+}
+
+.meta {
+  font-family: museo-slab-bold;
+  display: block;
+  /*position: relative;*/
+  font-size: 14px;
+  margin-top: 0px;
+  font-style: italic;
+  color: #888;
+}
+
+hr {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  height: 10px;
+  color: black;
+}
+
+article.post-content p {
+  font-family: Lato, Helvetica Neue, Helvetica, Arial;
+  font-size: 17px;
+  margin: 0 0 20px;
+}
+
+code, code * {
+  font-size: 14px;
+  font-family: Menlo, Monaco, "Courier New", monospace !important;
 }
