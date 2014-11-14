@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'museo-slab-bold';
-  src: url('../assets/fonts/Museo_Slab_500_2-webfont.woff');
+  src: url('../assets/fonts/Museo_Slab_300-webfont.woff');
 }
 
 @charset "utf-8";
@@ -29,7 +29,7 @@
 }
 
 .page-title {
-  font-family: 'museo-slab-regular';
+  font-family: 'museo-slab-light';
   color: black !important;
   padding-left: 5px;
 }
@@ -176,6 +176,7 @@ hr {
 }
 
 #subtitle {
+  color: #555;
   margin-top: 6px;
   margin-left: 0px;
 }
@@ -394,11 +395,16 @@ span.rnd {
 
 .slash {
   display: inline-block;
-  font-size: 31px;
+  font-size: 35px;
   position: relative;
-  top: 3px;
-  color: #ce0000;
+  top: 4px;
+  color: #C0BFBF;
+  font-weight: 100;
   letter-spacing: -5px;
+}
+
+.full-name {
+  font-family: "museo-slab-regular";
 }
 
 legend {

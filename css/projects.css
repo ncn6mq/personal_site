@@ -6,7 +6,6 @@
   margin-top: 18px;
 }
 
-
 p.project-description {
   font-family: 'Lato', sans-serif;
   color: #2c2c2c;
@@ -36,11 +35,11 @@ p.project-description {
 }
 
 .project-link {
-  font-family: 'museo-slab-regular';
+  font-family: 'museo-slab-bold';
   /*position: absolute;*/
   /*right: 5px;*/
   /*top: 18px;*/
-  font-size: 14px;
+  font-size: 13px;
   float: right;
   display: block;
   padding: 18px 0px 0px 35px;
@@ -55,7 +54,7 @@ p.project-description {
 }
 
 #projects h3 {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 19px;
   margin-bottom: 7px;
   display: inline-block;
