@@ -163,10 +163,6 @@ hr {
   margin-top: 40px;
 }
 
-/*#header .title {*/
-/*margin-left: 0;*/
-/*}*/
-
 #header {
   padding-top: 20px;
 }
@@ -184,10 +180,6 @@ hr {
 #header .sub-title h4, h5, h6 {
   display: block;
   margin-left: 20px;
-}
-
-.title {
-  margin-left: 1em;
 }
 
 .post-link {
