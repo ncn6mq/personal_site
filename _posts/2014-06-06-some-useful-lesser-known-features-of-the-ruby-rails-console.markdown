@@ -75,4 +75,8 @@ irb > puts user.attributes
 
 Again, pretty self-explanatory, but extremely useful to know as well.
 
+<hr/>
 
+## Comments
+
+{% include comments.html %}
