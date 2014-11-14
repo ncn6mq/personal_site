@@ -5,10 +5,18 @@
 
 <body id="page">
 <section id="header" class="sub-page">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row-fluid">
       <div class="title">
-        <h2 id="title">Anthony Erlinger</h2>
+        <h2 id="title">
+          Anthony Erlinger
+          <span class="slash">
+            //
+          </span>
+          <span class="page-title">
+            {{ page.title }}
+          </span>
+        </h2>
         <h5 id="subtitle">Portfolio site of a developer, data hacker, and science enthusiast.</h5>
       </div>
     </div>
@@ -16,10 +24,9 @@
 </section>
 
 <section id="home" class="sub-page">
-  <div class="container-fluid">
+  <div class="container">
     <div class="story">
       <div class="container">
-
 
         <div class="row-fluid">
           <div class="span2">
@@ -28,23 +35,6 @@
             </a>
 
             {% include navigation.html %}
-
-            <div class="sublinks">
-              <ul class="social-links">
-                <li class="github">
-                  <a href="https://github.com/Aerlinger" target="_blank">
-                    <img src="/assets/github.png" id="github" class="social" height="50px" width="50px" alt="Github"/>
-                  </a>
-                </li>
-
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/aerlinger/" target="_blank">
-                    <img src="/assets/linkedin.png" id="linkedin" class="social" alt="LinkedIn"/>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
           </div>
 
           {{ content }}
@@ -54,10 +44,6 @@
     </div>
   </div>
 </section>
-
-{% comment %}
-{% include footer.html %}
-{% endcomment %}
 
 </body>
 </html>

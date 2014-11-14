@@ -1,7 +1,7 @@
 ---
-layout: project
+layout: page
 title: Data Structures in Python
-image: physics_academy.jpg
+image: data_structures.jpg
 description: Live Circuit simulator
 link: http://github.com/aerlinger/maxwell
 ---

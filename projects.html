@@ -1,22 +1,19 @@
 ---
 layout: page
+title: Projects
 ---
 
 <div id="projects" class="span10 page">
-  <h2 class="page-heading">Projects</h2>
-
-  <ul>
+  <ul id="project_list">
     {% for project in site.projects %}
     <li class="project-list">
-      <img width="150px" height="150px" class="project-image" src="/assets/projects/{{ project.image }}">
+      <img class="project-image" src="/assets/projects/{{ project.image }}">
 
-      <h4>
-        <a class="project-title" href="{{ project.url | prepend: project.baseurl }}">
-          {{ project.title }}
-        </a>
-      </h4>
+      <h3 class="project-header">
+        {{ project.title }}
+      </h3>
 
-      <p class="project-link" href="{{ project.link }}">link &raquo;</p>
+      <a class="project-link" href="{{ project.link }}">More info &raquo;</a>
 
       <span class="project-meta">
         {{ project.date | date: "%b %-d, %Y" }}

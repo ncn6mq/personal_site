@@ -6,12 +6,11 @@
 <body data-spy="scroll" data-offset="10" id="page">
 
 <section id="home">
-  <div class="container-fluid">
+  <div class="container">
     <div class="story">
-
       <div class="container">
 
-        <div class="row-fluid">
+        <div class="row">
           <div class="title">
             <h1>Anthony Erlinger</h1>
             <h3>Portfolio site of a developer, data hacker, and science enthusiast.</h3>
@@ -27,23 +26,6 @@
 
           <div class="span2">
             {% include navigation.html %}
-
-            <div class="sublinks">
-              <ul class="social-links">
-                <li class="github">
-                  <a href="https://github.com/Aerlinger" target="_blank">
-                    <img src="/assets/github.png" id="github" class="social" height="50px" width="50px" alt="Github"/>
-                  </a>
-                </li>
-
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/aerlinger/" target="_blank">
-                    <img src="/assets/linkedin.png" id="linkedin" class="social" alt="LinkedIn"/>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
           </div>
 
           {{ content }}
@@ -53,10 +35,6 @@
     </div>
   </div>
 </section>
-
-{% comment %}
-{% include footer.html %}
-{% endcomment %}
 
 </body>
 </html>
