@@ -403,7 +403,8 @@ span.rnd {
   letter-spacing: -5px;
 }
 
-.full-name {
+a.full-name {
+  color: #900 !important;
   font-family: "museo-slab-regular";
 }
 
