@@ -6,9 +6,17 @@
   margin-top: 18px;
 }
 
+
 p.project-description {
   font-family: 'Lato', sans-serif;
-  color: black;
+  color: #2c2c2c;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.project-list > p {
+  font-family: 'Lato', sans-serif;
+  color: #2c2c2c;
   font-size: 15px;
   text-align: justify;
 }
@@ -27,17 +35,15 @@ p.project-description {
   min-height: 170px;
 }
 
-.project-list:hover {
-  border-top: 1px solid #e6e6e6;
-  background: #FEFEFE;
-}
-
 .project-link {
   font-family: 'museo-slab-regular';
-  position: absolute;
-  right: 5px;
-  top: 18px;
+  /*position: absolute;*/
+  /*right: 5px;*/
+  /*top: 18px;*/
   font-size: 14px;
+  float: right;
+  display: block;
+  padding: 18px 0px 0px 35px;
 }
 
 #project_list {
@@ -52,4 +58,5 @@ p.project-description {
   font-size: 19px;
   line-height: 19px;
   margin-bottom: 7px;
+  display: inline-block;
 }

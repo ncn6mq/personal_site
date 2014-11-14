@@ -3,5 +3,9 @@ layout: page
 title: Data Structures in Python
 image: data_structures.jpg
 description: Live Circuit simulator
-link: http://github.com/aerlinger/maxwell
+source: https://github.com/Aerlinger/datastructures
 ---
+
+A consortium of data structures I compiled while reviewing my computer science curriculum. Many of the examples are compiled from problems presented in *(Elements of Programming Interviews)*.
+
+Includes dynamic arrays, linked lists, tress & graphs, hash functions, heaps, recursion & dynamic programming, etc...

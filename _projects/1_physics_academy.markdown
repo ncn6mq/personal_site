@@ -2,8 +2,11 @@
 layout: page
 title: Physics Academy
 image: physics_academy.jpg
-description:  By combining the universal application of well-established learning platforms with the dynamic and portable nature of virtual physics simulations, Physics Academy seeks to build next-generation educational technologies to benefit the worldwide student community.
-link: http://github.com/aerlinger/lyrics_extractor
+description:
+source: https://github.com/aerlinger/physics_academy
+link: http://physicsacademy.com
 ---
 
-test
+Physics Academy is an online learning platform which offers interactive simulations as a means to demonstrate abstract concepts in physics. Physics Academy was founded on the simple premise that it's best to learn by doing.
+
+Physics Academy was a finalist entry in the 2012 Columbia Venture Competition.

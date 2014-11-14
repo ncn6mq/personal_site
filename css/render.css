@@ -395,11 +395,10 @@ span.rnd {
 .slash {
   display: inline-block;
   font-size: 31px;
-  font-weight: bold;
   position: relative;
-  top: 5px;
+  top: 3px;
   color: #ce0000;
-  /*display: none;*/
+  letter-spacing: -5px;
 }
 
 legend {

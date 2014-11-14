@@ -2,5 +2,7 @@
 layout: page
 title:  Newton
 image:  newton.jpg
-link: github.com/aerlinger/newton
+source: https://github.com/aerlinger/newton
 ---
+
+A simple framework for defining 2D physics simulations using JSON. Newton uses the Box2D engine at its core.
