@@ -5,3 +5,4 @@
 - Readmes are NOT a substitute for proper documentation
 - Managing a legacy schema with attr_deprecated
 - The 10 worst errors messsages of all time
+- Testing is essential to building large scale software, but testing poorly is still worse than not testing at all.
