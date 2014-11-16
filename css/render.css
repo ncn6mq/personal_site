@@ -309,8 +309,7 @@ span.rnd {
 }
 
 .social {
-  /*display: block;*/
-  width: 30px;
+  width: 20px;
   height: auto;
 }
 
@@ -322,9 +321,13 @@ span.rnd {
 #home ul.navi {
   list-style-type: none;
 
-  margin: 0 -1px 2em -1px;
+  margin: 0 -1px 0.5em -1px;
 
   padding: 0;
+}
+
+.navi p {
+  text-align: justify;
 }
 
 #home ul.navi li a {
@@ -598,6 +601,15 @@ note : this will break bootstrap fluid and responsive.css
   color: #222;
 }
 
+#ae {
+  /*margin-top: 30px;*/
+  position: absolute;
+
+  right: 100px;
+  bottom: -100px;
+  margin-bottom: 30px;
+}
+
 .span7.page {
   position: relative;
   z-index: -1;
@@ -610,6 +622,7 @@ note : this will break bootstrap fluid and responsive.css
   #home ul.navi li a {
     font-size: 12px;
     padding: .3em;
+    padding-left: .8em;
   }
 
   #home .story {
@@ -618,5 +631,69 @@ note : this will break bootstrap fluid and responsive.css
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 !important;
+  }
 
+  .container-fluid {
+    padding: 0 !important;
+  }
+}
 
+@media (max-width: 768px) {
+  #home ul.navi {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 -1px .8em -1px;
+    padding: 0;
+  }
+
+  #home ul.navi li a {
+    padding: 10px;
+  }
+
+  #home ul.navi li a {
+    font-size: 16px !important;
+  }
+
+  h1 {
+    font-size: 34px;
+    margin-bottom: 0px !important;
+  }
+
+  .social-links {
+    display: none !important;
+  }
+
+  .container {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .container-fluid {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .title p, .title h2, .title h3 {
+    line-height: 20px;
+    font-size: 15px !important;
+    margin-left: 0 !important;
+    margin-top: 2px !important;
+  }
+}
+
+@media (max-width: 979px) {
+  h1 {
+    font-size: 34px;
+    margin-bottom: 0px !important;
+  }
+
+  .title p, .title h2, .title h3 {
+    line-height: 20px !important;
+    font-size: 18px !important;
+    margin-left: 0 !important;
+    margin-top: 2px !important;
+  }
+}
