@@ -1,5 +1,10 @@
-## Avoid premature optimization by writing synchronous code before parallel or asyncronous code
-
+---
+layout: post
+blog_title:  "Avoid premature optimization by writing synchronous code before parallel code"
+redirect_from: "/2015/02/01/avoid-premature-optimization-by-writing-synchronous-code-before-parallel-code.markdown/"
+permalink: "blog/avoid-premature-optimization"
+date:   2015-02-01 10:09:31
+categories: parallel concurrency node scala go clojure
 ---
 
 Perhaps the most disruptive paradigm shifts in software over the last decade has been the shift in focus towards concurrent or asynchronous
@@ -26,8 +31,8 @@ In order to mitigate these costs, it's incumbent for you to change the way your 
 an async-focused framework like Node.js it's easy to fall into the trap of taking the API at face
 value and always using the default asynchronous functions. Unless absolutely necessary, this is a mistake. As with any engineering
 problem, always begin with the simplest solution that doesn't compromise design
-requirements then layer on complexity only as it's absolutely required. *In more concrete terms this means writing linear/synchronous
-code first whenever it's practical to do so then refactoring to an asynchronous paradigm once your synchronous code is stable.*
+requirements then layer on complexity only as it's absolutely required. In more concrete terms __this means writing linear/synchronous
+code first whenever it's practical to do so then refactoring to an asynchronous paradigm once your synchronous code is stable.__
 
 
 Begin by developing core specifications of what you're trying to do, mapping out sequential steps for that specification and then
@@ -36,7 +41,9 @@ layering additional complexity. There are a variety of reasons for this approach
 of creating modular, well-abstracted software design guided by readable, conceptually visible code. This may seem trite and obvious,
 but in practice it's much more powerful than it seems, and in reality it's much more rare amongst development teams than it ought to be.
 The reason being that focusign on parallel and asynchronous software design (or any complex engineering design) obscures the underlying architecture
-of the problem at hand. By taking a simpler, linear approach first, you and those who work with you will be
+of the problem at hand.
+
+By taking a simpler, linear approach first, you and those who work with you will be
 more able to identify key abstractions that form the relationships between the problem you're trying to solve and concrete
 modules, classes, functions, and so on which make that solution a reality. As a bonus, you'll also be less likely to
 be surprised by more elusive and costly bugs that often occur later in the development cycle. If you're having a hard time
@@ -47,11 +54,15 @@ algorithm you can be darn sure it will be hard to find in asynchronous code for 
 Simplifying the early development process as much as practically possible improves productivity and long-term stability. It's a win-win.
 
 
----
 
-### Additional resources and recommended reading:
+#### Additional resources and recommended reading:
 
- - [Callback Hell: A guide to writing asynchronous javascript programs] (http://callbackhell.com/)
- - [Premature optimization is the root of all evil] (http://c2.com/cgi/wiki?PrematureOptimization)
- - [Seven concurrency models in seven weeks] (https://pragprog.com/book/pb7con/seven-concurrency-models-in-seven-weeks)
+- [Callback Hell: A guide to writing asynchronous javascript programs](http://callbackhell.com/)
+- [Premature optimization is the root of all evil](http://c2.com/cgi/wiki?PrematureOptimization)
+- [Seven concurrency models in seven weeks](https://pragprog.com/book/pb7con/seven-concurrency-models-in-seven-weeks)
 
+<hr/>
+
+## Comments
+
+{% include comments.html %}

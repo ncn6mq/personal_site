@@ -602,12 +602,19 @@ note : this will break bootstrap fluid and responsive.css
 }
 
 #ae {
-  /*margin-top: 30px;*/
-  position: absolute;
 
-  right: 100px;
-  bottom: -100px;
+  /*margin-top: 30px;*/
+
+  /*right: 100px;*/
+  /*bottom: -100px;*/
   margin-bottom: 30px;
+
+  /* margin-top: 30px; */
+  /* position: absolute; */
+  /*left: 100px;*/
+  float: right;
+  margin-right: 80px;
+  margin-top: 50px;
 }
 
 .span7.page {
@@ -663,6 +670,7 @@ note : this will break bootstrap fluid and responsive.css
   }
 
   .social-links {
+    margin-top: 40px;
     display: none !important;
   }
 

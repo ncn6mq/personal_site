@@ -34,6 +34,8 @@ article.post-content p {
   font-family: Lato, Helvetica Neue, Helvetica, Arial;
   font-size: 17px;
   margin: 0 0 20px;
+
+  text-align: justify;
 }
 
 article.post-content ol li {
