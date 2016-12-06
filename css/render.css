@@ -40,7 +40,7 @@ body * {
 
 p {
   font-weight: 300;
-  font-size: 14pt;
+  font-size: 12pt;
   line-height: 18pt;
 }
 
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-  font-size: 36pt;
+  font-size: 28pt;
   font-weight: 300;
   line-height: 40pt;
 }
@@ -612,9 +612,11 @@ note : this will break bootstrap fluid and responsive.css
   /* margin-top: 30px; */
   /* position: absolute; */
   /*left: 100px;*/
+  width: 70px;
+  height: auto;
   float: right;
   margin-right: 80px;
-  margin-top: 50px;
+  margin-top: 12px;
 }
 
 .span7.page {
