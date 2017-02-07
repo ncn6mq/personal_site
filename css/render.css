@@ -40,7 +40,7 @@
 #main_subtitle {
   margin: 10px 5px 20px 0px;
   margin-left: 0 !important;
-  font-size: 1.2em !important;
+  font-size: 1.1em !important;
   color: #900 !important;
   line-height: 1.3em;
   font-weight: normal;
@@ -56,11 +56,13 @@ h1, h2, h3, h4, h5, h6  {
   padding-left: 5px;
 }
 
-body * {
+body {
   background-color: #FEFEFE;
 }
 
 p {
+  font-family: 'museo-slab';
+  color: #444;
   font-weight: 300;
   font-size: 12pt;
   line-height: 18pt;
@@ -106,7 +108,7 @@ p a.btn {
   text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6{
   font-family: 'museo-slab';
   color: #000;
 }
@@ -207,6 +209,9 @@ hr {
   float: right;
   position: relative;
   bottom: 30px;
+  font-style: italic;
+  font-size: 12px;
+  font-color: #555;
 }
 
 .title p, .title h2, .title h3 {
@@ -665,19 +670,25 @@ note : this will break bootstrap fluid and responsive.css
 }
 
 @media (max-width: 768px) {
+
+  .thumbnail.portrait {
+    display: none;
+  }
+
   #home ul.navi {
     text-align: center;
     list-style-type: none;
-    margin: 0 -1px .8em -1px;
+    margin: 0 -1px 1em -1px;
     padding: 0;
   }
 
   #home ul.navi li a {
     padding: 10px;
-  }
-
-  #home ul.navi li a {
     font-size: 16px !important;
+    display: inline-block;
+    border: none;
+    text-decoration: underline;
+    color: #A00;
   }
 
   h1 {
