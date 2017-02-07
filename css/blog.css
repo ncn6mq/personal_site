@@ -13,7 +13,8 @@
 }
 
 .meta {
-  font-family: museo-slab-bold;
+  font-family: museo-slab;
+  /*font-weight: bold;*/
   display: block;
   /*position: relative;*/
   font-size: 14px;

@@ -4,13 +4,14 @@
 }
 
 @font-face {
-  font-family: 'museo-slab-regular';
+  font-family: 'museo-slab';
   src: url('../assets/fonts/Museo_Slab_100-webfont.woff');
 }
 
 @font-face {
-  font-family: 'museo-slab-bold';
-  src: url('../assets/fonts/Museo_Slab_300-webfont.woff');
+  font-family: 'museo-slab';
+  src: url('../assets/fonts/Museo_Slab_500-webfont.woff');
+  font-weight: bold;
 }
 
 @charset "utf-8";
@@ -28,6 +29,27 @@
   /*box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.13);*/
 }
 
+#name {
+  font-size: 24pt;
+
+  margin-top: 25px;
+  line-height: 24pt;
+  font-weight: normal;
+}
+
+#main_subtitle {
+  margin: 10px 5px 20px 0px;
+  margin-left: 0 !important;
+  font-size: 1.2em !important;
+  color: #900 !important;
+  line-height: 1.3em;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: museo-slab;
+}
+
 .page-title {
   font-family: 'museo-slab-light';
   color: black !important;
@@ -35,7 +57,7 @@
 }
 
 body * {
-  font-family: 'Lato', sans-serif;
+  background-color: #FEFEFE;
 }
 
 p {
@@ -85,24 +107,20 @@ p a.btn {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: 'museo-slab-regular';
+  font-family: 'museo-slab';
   color: #000;
 }
 
 h1 {
-  font-size: 28pt;
-  font-weight: 300;
   line-height: 40pt;
 }
 
 h2 {
   font-size: 18pt;
-  font-weight: 300;
   line-height: 24pt;
 }
 
 h3 {
-  font-weight: 300;
   font-size: 17pt;
   font-style: italic;
 }
@@ -167,10 +185,6 @@ hr {
   padding-top: 20px;
 }
 
-#header .title h1, h2, h3 {
-  color: #900 !important;
-}
-
 #subtitle {
   color: #555;
   margin-top: 6px;
@@ -183,7 +197,7 @@ hr {
 }
 
 .post-link {
-  font-family: "museo-slab-regular";
+  font-family: "museo-slab";
   font-style: normal;
   display: block !important;
   width: 100% !important;
@@ -209,10 +223,10 @@ hr {
 }
 
 .nav li a {
-  font-family: museo-slab-bold;
+  font-family: museo-slab;
   color: #f5f5f5 !important;
   text-shadow: none !important;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 1.6em;
 }
 
@@ -321,9 +335,9 @@ span.rnd {
 #home ul.navi {
   list-style-type: none;
 
-  margin: 0 -1px 0.5em -1px;
+  margin: 0 -1px 1em -1px;
 
-  padding: 0;
+  padding: 0 5px;
 }
 
 .navi p {
@@ -332,9 +346,9 @@ span.rnd {
 
 #home ul.navi li a {
 
-  font-family: museo-slab-regular;
+  font-family: museo-slab;
 
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
@@ -343,7 +357,7 @@ span.rnd {
   border-left: 1px solid #A00;
   border-right: 1px solid #A00;
 
-  color: #000;
+  color: #555;
   background-color: rgba(0, 0, 0, 0);
 
   padding: .5em 1em;
@@ -400,7 +414,7 @@ span.rnd {
 
 a.full-name {
   color: #900 !important;
-  font-family: "museo-slab-regular";
+  font-family: "museo-slab";
 }
 
 legend {

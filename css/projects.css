@@ -1,4 +1,5 @@
 .project-image {
+  border: 1px solid lightgray;
   display: block;
   height: 140px;
   float: left;
@@ -21,7 +22,7 @@ p.project-description {
 }
 
 .project-header {
-  font-family: 'museo-slab-regular';
+  font-family: 'museo-slab';
   font-style: normal;
   display: block;
 }
@@ -35,11 +36,12 @@ p.project-description {
 }
 
 .project-link {
-  font-family: 'museo-slab-bold';
+  font-family: 'museo-slab';
+  font-weight: bold;
   /*position: absolute;*/
   /*right: 5px;*/
   /*top: 18px;*/
-  font-size: 13px;
+  font-size: 11px;
   float: right;
   display: block;
   margin: 18px 0px 0px 35px;
