@@ -586,7 +586,7 @@ note : this will break bootstrap fluid and responsive.css
   margin: 0 auto;
   padding: 0px;
   position: absolute;
-  left: 0px;;
+  left: 0px;
   width: 800px;
   z-index: 1;
   overflow: hidden;
@@ -621,7 +621,6 @@ note : this will break bootstrap fluid and responsive.css
 }
 
 #ae {
-
   /*margin-top: 30px;*/
 
   /*right: 100px;*/
@@ -658,7 +657,6 @@ note : this will break bootstrap fluid and responsive.css
 }
 
 @media (max-width: 768px) {
-
   .thumbnail.portrait {
     display: none;
   }
