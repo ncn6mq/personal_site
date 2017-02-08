@@ -8,7 +8,7 @@ date:   2014-10-06 03:41:52
 categories: rails ruby
 ---
 
-### 1. Customize the startup behavior in the console by creating a `.irbrc` file (or `.pryrc`) in your active directory
+#### **1. Customize the startup behavior in the console by creating a `.irbrc` file (or `.pryrc`) in your active directory**
 
 During startup IRB always attempts to run a ruby file named `.irbrc` in your current directory. If it isn't found, it recursively attempts to find it in each parent in directory tree, eventually defaulting to the `~/.irbrc` in your home directory if it exists.
 
@@ -39,7 +39,7 @@ irb > puts a
  => "defined in .irbrc!"
 {% endhighlight %}
 
-### 2. Ruby saves the result of your most recent command in a special variable named '`_`'
+#### **2. Ruby saves the result of your most recent command in a special variable named '`_`'**
 
 Pretty self explanatory. Very useful if you forget to assign the result of a time consuming operation to a variable.
 
@@ -54,7 +54,7 @@ irb > puts result
   
 {% endhighlight %}
 
-### 3. Add a semicolon to the end of a statement to suppress default output
+#### **3. Add a semicolon to the end of a statement to suppress default output**
 
 This is really useful for particularly verbose outputs that flood your command history:
 
@@ -64,7 +64,7 @@ user@localhost:> irb
 > raw_user_attributes = user_sql_adapter.execute("SELECT * from users");
 {% endhighlight %}
 
-### 4. Use the pretty print method (`pp`) to inspect the properties a hash:
+#### **4. Use the pretty print method (`pp`) to inspect the properties a hash:**
 
 {% highlight ruby %}
 ~/.../my_rails_project> irb
@@ -73,7 +73,7 @@ irb > user = User.first;
 irb > puts user.attributes
 {% endhighlight %}
 
-### 5. Use the `reload!` method to update code changes made outside of the console
+#### **5. Use the `reload!` method to update code changes made outside of the console**
 
 Again, pretty self-explanatory, but extremely useful to know as well.
 

@@ -100,22 +100,28 @@ p a:hover {
   text-decoration: none;
 }
 
+#header_container {
+  padding-bottom: .5em;
+}
+
 ul.post-list li {
   padding: 3px;
   padding-left: 15px;
   padding-right: 15px;
+
+  border-bottom: 1px solid #ededed;
 }
 
 ul.post-list li:first-child {
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #ededed;
 }
 
 ul.post-list li:nth-child(even) {
-  background-color: #fafafa !important;
+  background-color: white !important;
 }
 
 ul.post-list li:nth-child(odd) {
-  background-color: white !important;
+  background-color: #fafafa !important;
 }
 
 .btn i {
@@ -303,10 +309,8 @@ span.rnd {
   height: 100%;
 }
 
-
-#home.sub-page .title {
-  padding-top: 60px;
-  margin-left: 0;
+#home .sub-page .title {
+  margin-left: 18px;
 }
 
 #home.sub-page .title h1, h2, h3, h4, h5 {
@@ -317,6 +321,7 @@ span.rnd {
   margin-left: 3em;
   font-size: 1.4em;
 }
+
 
 #home ul.navi {
   list-style-type: none;
@@ -430,8 +435,11 @@ b {
 
 #title {
   display: inline-block;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
+
+  .page-title {
+    opacity: 0.7;
+  }
 }
 
 #sub-title {
@@ -719,7 +727,6 @@ ul.post-list {
     display: none;
   }
 
-  /*
   #home ul.navi {
     text-align: center;
     list-style-type: none;
@@ -735,7 +742,6 @@ ul.post-list {
     font-size: 15px !important;
     padding: 4px;
   }
-  */
 
   h1 {
     font-size: 34px;

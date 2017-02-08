@@ -32,8 +32,27 @@ p.project-description {
   display: block;
   border-top: 1px solid #f5f5f5;
   position: relative;
-
   min-height: 170px;
+}
+
+ul.project-list li {
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  border-bottom: 1px solid #ededed;
+}
+
+ul.project-list li:first-child {
+  border-top: 1px solid #ededed;
+}
+
+ul.project-list li:nth-child(even) {
+  background-color: white !important;
+}
+
+ul.project-list li:nth-child(odd) {
+  background-color: #fcfcfc !important;
 }
 
 .project-link {

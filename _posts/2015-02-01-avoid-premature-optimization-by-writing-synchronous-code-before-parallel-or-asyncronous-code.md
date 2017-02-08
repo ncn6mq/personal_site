@@ -6,6 +6,7 @@ redirect_from: "/2015/02/01/avoid-premature-optimization-by-writing-synchronous-
 permalink: "blog/avoid-premature-optimization"
 date:   2015-02-01 10:09:31
 categories: parallel concurrency node scala go clojure
+comments: true
 ---
 
 Perhaps the most disruptive paradigm shifts in software over the last decade has been the shift in focus towards concurrent or asynchronous
@@ -64,6 +65,7 @@ Simplifying the early development process as much as practically possible improv
 
 <hr/>
 
-## Comments
 
-{% include comments.html %}
+
+
+
