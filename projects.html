@@ -3,7 +3,7 @@ layout: page
 title: Projects
 ---
 
-<div id="projects" class="span10 page">
+<div id="projects" class="col-xs-10 page">
   <ul id="project_list">
     {% for project in site.projects %}
     <li class="project-list">
@@ -21,9 +21,10 @@ title: Projects
         <a class="project-link" href="{{ project.source }}" target="_blank">View Source</a>
       {% endif %}
 
-      <span class="project-meta">
-        {{ project.date | date: "%b %-d, %Y" }}
-      </span>
+      <!---->
+      <!--<span class="project-meta">-->
+        <!--{{ project.date | date: "%b %-d, %Y" }}-->
+      <!--</span>-->
 
       {{ project.content }}
     </li>

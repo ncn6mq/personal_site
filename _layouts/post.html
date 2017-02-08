@@ -3,9 +3,9 @@ layout: page
 title: Blog
 ---
 
-<div class="post span10 page">
+<div id="blog_article" class="post col-xs-10 page">
   <header class="post-header">
-    <h2 id="blog_title">{{ page.blog_title }}</h2>
+    <h3 class="no-margin" id="blog_title">{{ page.blog_title }}</h3>
     <p class="meta">
       Posted {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
