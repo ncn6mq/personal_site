@@ -343,7 +343,6 @@ span.rnd {
 
   padding: .5em 1em;
   padding-right: 0;
-
 }
 
 #home ul.navi li a:hover {
@@ -421,13 +420,13 @@ b {
   height: auto;
 }
 
-
-
 .navi p {
   text-align: justify;
 }
 
-
+.navi {
+  padding: 2px;
+}
 
 #title {
   display: inline-block;
@@ -508,11 +507,11 @@ ul {
   font-family: museo-slab;
 }
 
-/*
-ul li {
-  list-style: none;
+#main_portrait {
+  //max-width: 150px;
+  //height: auto;
+  border-radius: 2px;
 }
-*/
 
 #work-experience ul li, #education ul li {
   display: list-item !important;

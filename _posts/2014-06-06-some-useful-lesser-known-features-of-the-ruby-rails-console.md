@@ -1,6 +1,6 @@
 ---
 layout: post
-blog_title:  "Some useful, lesser-known features of the Ruby/Rails conse"
+blog_title:  "Some useful, lesser-known features of the Ruby/Rails console"
 title: "Blog"
 redirect_from: "/2014/06/06/some-useful-lesser-known-features-of-the-ruby-rails-console.md"
 permalink: "blog/rails-console-tips"
