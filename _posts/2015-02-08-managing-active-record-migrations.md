@@ -14,7 +14,7 @@ when managing an app that has multiple environments or is maintained by a large 
 
 **Here are a few simple steps I follow when writing a new migration:**
 
-####1. Start from a clean git state (i.e. `git status` says "nothing to commit").
+##### **1. Start from a clean git state (i.e. `git status` says "nothing to commit").**
 
 
 {% highlight ruby %}
@@ -29,7 +29,7 @@ readability/maintainability of your git history however, but more importantly we
 
 ---
 
-####2. Explicitly define both the `up` and `down` methods of the migration.
+##### **2. Explicitly define both the `up` and `down` methods of the migration.**
 
 
 {% highlight ruby %}
@@ -54,19 +54,19 @@ is if you declare something like `remove_column :users, :middle_name`, Rails won
 
 ---
 
-####3. Run `rake db:migrate` immediately followed by `git status` to ensure the changes made to `schema.rb` are consistent with your expectation.
+##### **3. Run `rake db:migrate` immediately followed by `git status` to ensure the changes made to `schema.rb` are consistent with your expectation.**
 
 You'll see the timestamp change along with changes in the respective tables affected by the migration.
 
 ---
 
-####4. Use `git add .` to add all changes made by the migration to the git staging area. *Don't commit yet.*
+##### **4. Use `git add .` to add all changes made by the migration to the git staging area. *Don't commit yet.***
 
 The reasons for this will be obvious after the next step.
 
 ---
 
-####5. Run `rake db:migrate:redo`
+##### **5. Run `rake db:migrate:redo`**
 
 If both your `up` and `down` methods are correctly defined then there should be no changes in our working directory and
 therefore `git status` shouldn't show any unstaged changes. In other words, your migrations are idempotent and didn't
@@ -74,18 +74,16 @@ affect the schema when run more than once.
 
 ---
 
-####6. If all goes well, commit the changes and summarize the commit changes within the body of the commit message.
+##### **6. If all goes well, commit the changes and summarize the commit changes within the body of the commit message.**
 
----
-
-#### If you encounter an error during the migration or get stuck in a consistent state
+#### *If you encounter an error during the migration or get stuck in a consistent state:*
 
   - If you're getting some error along the lines of 'column doesn't exist' etc. then wrap the offending line of code in an `if` statement using the `table_exists?` and `column_exists?` to ensure that the migration doesn't run against columns that have been deleted.
   - Your development should have a properly defined seeds file where `RAILS_ENV=development rake db:reset` can be run to wipe and reinitialize the application into a usable state. If shit really hits the fan, it may be worthwhile to discard the commit and run a `rake db:reset` the database, but be warned that this drops the database so it should always be used judiciously.
 
 ---
 
-### Some final points
+##### **Some final points**
   - Never make a commit unless both `rake db:migrate` && `rake db:migrate:redo` run as expected without errors.
   - Be absolutely sure your development environment is well isolated from staging/production environments
   - Run `rake db:migrate:status` and cross reference the printed result with the timestamp in `schema.rb` to make sure you are where you think you are.

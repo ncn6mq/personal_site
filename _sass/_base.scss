@@ -206,6 +206,10 @@ hr {
  * [2] Navbar and Page header positioning
  */
 
+.strong {
+  font-weight: bold;
+}
+
 #header {
   padding-top: 20px;
 }
@@ -499,6 +503,11 @@ legend h2 {
   padding-bottom: .1em;
   margin-top: .5em;
 }
+
+ul {
+  font-family: museo-slab;
+}
+
 /*
 ul li {
   list-style: none;
