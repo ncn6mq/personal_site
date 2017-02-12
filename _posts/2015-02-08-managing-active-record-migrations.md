@@ -17,10 +17,10 @@ when managing an app that has multiple environments or is maintained by a large 
 ##### **1. Start from a clean git state (i.e. `git status` says "nothing to commit").**
 
 
-{% highlight ruby %}
+{% highlight shell %}
 $ git status
-On branch hubspot_integration
-Your branch is up-to-date with 'origin/hubspot_integration'.
+On branch master
+Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ affect the schema when run more than once.
 
 ---
 
-##### **Some final points**
+#### **Some final points**
   - Never make a commit unless both `rake db:migrate` && `rake db:migrate:redo` run as expected without errors.
   - Be absolutely sure your development environment is well isolated from staging/production environments
   - Run `rake db:migrate:status` and cross reference the printed result with the timestamp in `schema.rb` to make sure you are where you think you are.

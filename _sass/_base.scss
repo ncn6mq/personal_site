@@ -55,12 +55,13 @@
   font-size: 24pt;
 
   margin-top: 25px;
+  margin-bottom: 0;
   line-height: 24pt;
   font-weight: normal;
 }
 
 #main_subtitle {
-  margin: 10px 5px 20px 0px;
+  margin: 10px 5px 40px 0px;
   margin-left: 0 !important;
   font-size: 1.1em !important;
   color: #900 !important;
@@ -70,71 +71,6 @@
 
 h1, h2, h3, h4, h5, h6  {
   font-family: museo-slab;
-}
-
-.page-title {
-  font-family: 'museo-slab-light';
-  color: black !important;
-  padding-left: 5px;
-}
-
-body {
-  background-color: #FEFEFE !important;
-}
-
-p {
-  font-family: 'museo-slab';
-  color: #444;
-  font-weight: 300;
-  font-size: 11pt;
-  line-height: 18pt;
-}
-
-p a {
-  color: #000000;
-  text-decoration: underline;
-}
-
-p a:hover {
-  color: #CCC;
-  text-decoration: none;
-}
-
-#header_container {
-  padding-bottom: .5em;
-}
-
-ul.post-list li {
-  padding: 3px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  border-bottom: 1px solid #ededed;
-}
-
-ul.post-list li:first-child {
-  border-top: 1px solid #ededed;
-}
-
-ul.post-list li:nth-child(even) {
-  background-color: white !important;
-}
-
-ul.post-list li:nth-child(odd) {
-  background-color: #fafafa !important;
-}
-
-.btn i {
-  margin-right: .7em;
-  color: white !important;
-}
-
-p a.btn {
-  text-decoration: none !important;
-}
-
-h1, h2, h3, h4, h5, h6{
-  font-family: 'museo-slab';
   color: #000;
 }
 
@@ -167,11 +103,45 @@ h6 {
   font-weight: normal;
 }
 
-.page-heading {
-  display: block;
-  font-size: 28pt;
-  margin-bottom: 50px;
+.page-title {
+  font-family: 'museo-slab-light';
+  color: black !important;
+  padding-left: 5px;
+}
 
+body {
+  background-color: #FEFEFE !important;
+}
+
+p {
+  font-family: 'museo-slab';
+  color: #444;
+  font-weight: 300;
+  font-size: 11pt;
+  line-height: 18pt;
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+
+    &:hover {
+      color: #CCC;
+      text-decoration: none;
+    }
+  }
+}
+
+#header_container {
+  padding-bottom: .5em;
+}
+
+.btn i {
+  margin-right: .7em;
+  color: white !important;
+}
+
+p a.btn {
+  text-decoration: none !important;
 }
 
 sup {
@@ -179,6 +149,7 @@ sup {
 }
 
 /* colors */
+/*
 .red {
   background-color: #900 !important;
 }
@@ -190,6 +161,7 @@ sup {
 .blue {
   background-color: #009 !important;
 }
+*/
 
 hr {
   margin: 5px 0;
@@ -231,22 +203,6 @@ hr {
   //margin-left: 20px;
 }
 
-.post-link {
-  font-family: "museo-slab";
-  font-style: normal;
-  display: block !important;
-  width: 100% !important;
-}
-
-.post-list .post-meta {
-  float: right;
-  position: relative;
-  bottom: 30px;
-  font-style: italic;
-  font-size: 12px;
-  font-color: #555;
-}
-
 .title p, .title h2, .title h3 {
   margin-left: 2em;
 }
@@ -276,110 +232,8 @@ hr {
   background-color: #500003 !important;
 }
 
-/* elements */
-span.rnd {
-  font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #bbb;
-  border-radius: 50px;
-  -moz-border-radius: 50px;
-  width: 44px;
-  height: 44px;
-  text-indent: 8px;
-  line-height: 44px;
-  position: absolute;
-  margin-top: 8px;
-  margin-left: 2px;
-  font-weight: normal;
-  text-transform: lowercase;
-  font-weight: 800;
-  font-style: italic;
-  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.075);
-  -webkit-box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.075);
-}
-
-/*************************************************************************************************
- * [3] The homepage
- */
-
-#home {
-  //color: #FFF;
-  position: relative;
-  height: 100%;
-}
-
-#home .sub-page .title {
-  margin-left: 18px;
-}
-
-#home.sub-page .title h1, h2, h3, h4, h5 {
-  margin-left: 0;
-}
-
-#home .title h3 {
-  margin-left: 3em;
-  font-size: 1.4em;
-}
-
-
-#home ul.navi {
-  list-style-type: none;
-
-  margin: 0 -1px 1em -1px;
-
-  padding: 0 5px;
-}
-
-#home ul.navi li a {
-  font-family: museo-slab;
-  font-weight: bold;
-
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  display: block;
-  border-left: 1px solid #A00;
-  border-right: 1px solid #A00;
-
-  color: #555;
-  background-color: rgba(0, 0, 0, 0);
-
-  padding: .5em 1em;
-  padding-right: 0;
-}
-
-#home ul.navi li a:hover {
-  background-color: #A00;
-  color: white;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
-  text-decoration: none;
-}
-
-#home h2, #home h3, #home h4 {
-  color: #900;
-}
-
-#home a {
-  //text-decoration: none;
-  color: #850000;
-  @include transition(border 300ms linear);
-
-  &:hover {
-    text-decoration: underline;
-    color: #900;
-  }
-}
-
-
 .thumbnail {
   border-radius: 0 !important;
-}
-
-#github {
-  /*float: left;*/
 }
 
 b {
@@ -481,111 +335,6 @@ legend h2 {
   padding-left: 1em;
 }
 
-/*************************************************************************************************
- * [4] Resume
- */
-
-#resume {
-  background-color: #222;
-  color: #333;
-  height: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0;
-
-  margin: 0 auto;
-  padding: 0px 0 200px 0;
-}
-
-#resume .container-fluid {
-  padding-top: 0px;
-}
-
-#work-experience .row {
-  padding-left: 1em;
-}
-
-#work-experience ul {
-  padding-left: 1em;
-  padding-bottom: .1em;
-  margin-top: .5em;
-}
-
-ul {
-  font-family: museo-slab;
-}
-
-#main_portrait {
-  //max-width: 150px;
-  //height: auto;
-  border-radius: 2px;
-}
-
-#work-experience ul li, #education ul li {
-  display: list-item !important;
-  padding-bottom: .1em;
-}
-
-#work-experience .label, #education .label {
-  font-size: .9em;
-  float: right;
-  position: relative;
-  left: 9px;
-  padding: .5em;
-  margin-right: 1.5em;
-  cursor: default;
-}
-
-.smallpad {
-  padding: 10px !important;
-  color: white;
-}
-
-.smallpad h1, .smallpad h2, .smallpad h3, .smallpad h4, .smallpad h5, .smallpad h6 {
-  color: white;
-}
-
-/*************************************************************************************************
- * [5] Publications & Patents
- */
-
-
-#publications {
-  background: url(../assets/backgrounds/secondBG.jpg) 50% 0 no-repeat fixed;
-  color: #222;
-  min-height: 1200px;
-}
-
-#publications h1, #publications h2, #publications h3, #publications h4 {
-  color: white;
-}
-
-#photography {
-  background: url(../assets/backgrounds/thirdBG.jpg) 50% 0 no-repeat fixed;
-  color: white;
-  min-height: 1000px;
-  height: 100%;
-  padding: 60px 0 0 0;
-}
-
-#photography .story {
-  margin-top: 20px;
-}
-
-#photography img {
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-#photography h2 {
-  font-weight: bold;
-  margin-left: 1em;
-}
-
-/*************************************************************************************************
- * [5] Contact
- */
 
 #contact {
   background: #8a0600;
@@ -615,67 +364,9 @@ ul {
   margin-left: 0 !important;
 }
 
-/* objects */
-
-/*
-you can add floating object in to design :
-
-<div class="bg"></div>
-<div class="bg2"></div>
-
-note : this will break bootstrap fluid and responsive.css
-*/
-
-.bg {
-  background: url(../assets/backgrounds/objects.png) top left no-repeat fixed;
-  height: 1200px;
-  margin: 0 auto;
-  padding: 0px;
-  position: absolute;
-  left: 0px;
-  width: 800px;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.bg2 {
-  background: url(../assets/backgrounds/objects2.png) top left no-repeat fixed;
-  height: 1400px;
-  margin: 0 auto;
-  padding: 0;
-  position: absolute;
-  left: -5px;
-  width: 1200px;
-  z-index: 1;
-  overflow: hidden;
-  top: 1379px;
-}
-
-.footer {
-  background: #333333;
-  padding: 14px 15px 15px;
-  margin-bottom: 0;
-  height: 200px;
-}
-
-.footer p {
-  font-size: 11pt;
-}
-
-.footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, footer h6 {
-  color: #222;
-}
-
 #ae {
-  /*margin-top: 30px;*/
-
-  /*right: 100px;*/
-  /*bottom: -100px;*/
   margin-bottom: 30px;
 
-  /* margin-top: 30px; */
-  /* position: absolute; */
-  /*left: 100px;*/
   width: 70px;
   height: auto;
   float: right;
@@ -690,27 +381,6 @@ note : this will break bootstrap fluid and responsive.css
   padding-left: 20px;
   min-height: 400px;
 }
-
-ul.post-list {
-
-  margin: 0 !important;
-  list-style: none !important;
-  list-style-image: none;
-  list-style-type: none;
-
-  li {
-    list-style: none !important;
-    //margin: 0 0 28px;
-    margin: 0 !important;
-  }
-
-  /*
-  @include breakpoint {
-    margin-bottom: 60px;
-  }
-  */
-}
-
 
 @media (max-width: 480px) {
   .container {
@@ -772,19 +442,6 @@ ul.post-list {
 }
 
 @media (max-width: 979px) {
-  /*
-  #home ul.navi li a {
-    font-size: 12px;
-    padding: .3em;
-    padding-left: .8em;
-  }
-
-  #home .story {
-    padding: 0;
-    margin: 0;
-  }
-  */
-
   h1 {
     font-size: 34px;
     margin-bottom: 0px !important;

@@ -2,7 +2,10 @@
 @import "bourbon/bourbon";
 
 @import "variables";
+@import "mixins";
 @import "base/base";
+@import "home";
+@import "posts";
 @import "base";
 @import "projects";
 

@@ -1,3 +1,10 @@
+.post-link {
+  font-family: "museo-slab";
+  font-style: normal;
+  display: block !important;
+  width: 100% !important;
+}
+
 ul.post-list {
 
   margin: 0 !important;
@@ -9,6 +16,32 @@ ul.post-list {
     list-style: none !important;
     //margin: 0 0 28px;
     margin: 0 !important;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-bottom: 1px solid #ededed;
+
+    &:first-child {
+      border-top: 1px solid #ededed;
+    }
+
+    &:nth-child(even) {
+      background-color: white !important;
+    }
+
+    &:nth-child(odd) {
+      background-color: #fafafa !important;
+    }
+  }
+
+  .post-meta {
+    float: right;
+    position: relative;
+    bottom: 30px;
+    font-style: italic;
+    font-size: 12px;
+    font-color: #555;
   }
 
   @include breakpoint {
@@ -88,6 +121,10 @@ ul.post-list {
     }
   }
 
+  p {
+    font-family: Lato;
+  }
+
   h1 {
     font-size: 30px;
     line-height: 35px;
@@ -143,31 +180,53 @@ ul.post-list {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 21px;
-    text-transform: uppercase;
 
     @include breakpoint {
       font-size: 16px;
       line-height: 25px;
-      text-transform: uppercase;
     }
   }
 
   a {
-    border-bottom: 2px solid #ddd;
+    border-bottom: 1px solid #ddd;
     color: #000;
 
     &:hover {
-      border-bottom-color: #bbb;
+      color: red;
     }
   }
 
   li {
+    font-family: Lato;
     margin: 10px 0;
   }
 
   img {
     padding: 10px 0;
   }
+}
+
+ol {
+  margin: 0 0 1.5em;
+  padding: 0;
+  counter-reset: item;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -1.6em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
 }
 
 iframe,
