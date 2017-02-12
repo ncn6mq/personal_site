@@ -7,18 +7,32 @@ title: Projects
   <ul id="project_list">
     {% for project in site.projects %}
     <li class="project-list">
-      <img class="project-image" src="/assets/projects/{{ project.image }}">
-
-      <h3 class="project-header">
-        {{ project.title }}
-      </h3>
-
       {% if project.link %}
-        <a class="project-link" href="{{ project.link }}" target="_blank">Visit Site &raquo;</a>
+        <a href="{{ project.link }}" target="_blank">
+          <img class="project-image" src="/assets/projects/{{ project.image }}">
+        </a>
+      {% else %}
+        <a href="{{ project.source }}" target="_blank">
+          <img class="project-image" src="/assets/projects/{{ project.image }}">
+        </a>
       {% endif %}
 
+
+      <h3 class="project-header">
+        {% if project.link %}
+          <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+        {% else %}
+          {{ project.title }}
+        {% endif %}
+      </h3>
+
+      {% if project.link %}<a class="project-link visit-site" href="{{ project.link }}" target="_blank">Visit Site &raquo;</a>{% endif %}
+
       {% if project.source %}
-        <a class="project-link view-source" href="{{ project.source }}" target="_blank">View Source</a>
+        <a class="project-link view-source" href="{{ project.source }}" target="_blank">
+          <span>  <img src="/assets/github.png" class="github-source-icon" height="20px" width="20px" alt="Github"/></span>
+          View Source
+        </a>
       {% endif %}
 
       <!---->
@@ -27,6 +41,12 @@ title: Projects
       <!--</span>-->
 
       {{ project.content }}
+      <div class="technologies">
+        <span class="tech-used">Built with:</span>
+        {% for technology in project.technologies %}
+          <span class='tech-label'>{{technology}}</span>
+        {% endfor %}
+      </div>
     </li>
     {% endfor %}
   </ul>

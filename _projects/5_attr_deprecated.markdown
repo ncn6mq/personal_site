@@ -3,6 +3,7 @@ layout: page
 title: attr_deprecated
 image: attr_deprecated.jpg
 source: https://github.com/Aerlinger/attr_deprecated
+technologies: ["Ruby/Rubygems"]
 ---
 
 
