@@ -1,15 +1,19 @@
 ---
 layout: post
-blog_title:  "Easier blogging with markdown"
+blog_title:  "Introducing a clean, versatile Markdown blog theme"
 title: "Blog"
 comments: true
 description: "Markdown Cheatsheet Demo..."
 keywords: "markdown, typography components, dummy content"
 ---
 
-### Introducing a clean, versatile Markdown theme
-
 **I'm including a sample of the markdown styles I've adapted for this blog theme in case anyone else is interested in using them. A sample layout is provided below.**
+
+**Styles:**
+[https://github.com/Aerlinger/personal_site/blob/master/_sass/_posts.scss](https://github.com/Aerlinger/personal_site/blob/master/_sass/_posts.scss)
+
+**Raw Markdown:**
+[https://raw.githubusercontent.com/Aerlinger/personal_site/master/_posts/2017-02-10-markdown-cheatsheet-demo.md](https://raw.githubusercontent.com/Aerlinger/personal_site/master/_posts/2017-02-10-markdown-cheatsheet-demo.md)
 
 
 #### Basic Typography
