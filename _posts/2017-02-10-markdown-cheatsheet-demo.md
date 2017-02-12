@@ -7,11 +7,16 @@ description: "Markdown Cheatsheet Demo..."
 keywords: "markdown, typography components, dummy content"
 ---
 
-> This is Markdown Cheatsheet Demo rendered in a custom style. Please check the raw content of this file on Github for the markdown usage.
+### Introducing a clean, versatile Markdown theme
 
-## Markdown Typography
+**I'm including a sample of the markdown styles I've adapted for this blog theme in case anyone else is interested in using them. A sample layout is provided below.**
+
+
+#### Basic Typography
 
 This is all simple markdown. **This text is bolded.** _This text is italic_ They can also be **_combined_** together. Or, we can highlight code: `ThisIsMyCode()`. Links work too [such as](#) or [http://www.example.com](http://www.example.com).
+
+> I'm including a sample of the markdown styles I've adapted for this blog theme in case anyone else is interested in using them. A sample layout is provided below.
 
 <div class="divider"></div>
 
@@ -125,9 +130,17 @@ ___
 
 ![Minion](http://i.imgur.com/lA91pOw.gif)
 
+#### Acknowledgements:
+
+The theme for this blog was inspired by some of the free templates from the Jekyll repository. I recommend checking them out here: [https://github.com/jekyll/jekyll/wiki/Themes](https://github.com/jekyll/jekyll/wiki/Themes).
+
 ---
+
 #### Footnotes:
 
 [^1]: 1: Footnote number one.
 
 [^2]: 2: Links can also be included [click here!](#)
+
+
+

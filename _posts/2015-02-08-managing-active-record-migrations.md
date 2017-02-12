@@ -93,3 +93,9 @@ affect the schema when run more than once.
   - Be wary of using `rename_column`, `remove_column`, they can both cause errors and downtime.
   - When renaming a column in a SQL DB, the table containing the column is locked until the rename completes, which, depending on the size of the table, can cause deadlocks in production. Similarly, ActiveRecord often stores columns in a cache meaning columns can still be referenced even after. Manual Weiss of Codeship has a much more thorough discussion on this on his blog: http://blog.codeship.com/rails-migrations-zero-downtime/
 
+
+<hr/>
+
+## Comments
+
+{% include comments.html %}

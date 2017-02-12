@@ -65,7 +65,9 @@ Simplifying the early development process as much as practically possible improv
 
 <hr/>
 
+## Comments
 
+{% include comments.html %}
 
 
 
