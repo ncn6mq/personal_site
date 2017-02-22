@@ -20,11 +20,11 @@ industry.
 Here are a few funny "patterns" I've noticed in the tech hiring
 process.
 
-1. Jumping straigt into technical questions without so much as glancing at my resume
+1. Jumping straight into technical questions without so much as glancing at my resume
    or any of the projects I've worked on.
 2. Not accepting a solution that differed from the solution they
-   expected to see. What made things worse is that they insisted their
-solution was ~O(n^2) when in fact the problem was NP-hard.
+   expected to see (what made things worse is that they insisted their
+solution was ~O(n^2) when in fact the problem was NP-hard.)
 3. Similarly, expecting a keyword answer related to a specific
    technology without understanding the general problem domain. (As an
 example, I was once asked a question about how to prevent state conflict
