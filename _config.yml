@@ -2,8 +2,8 @@
 title: Anthony Erlinger
 email: aerlinger@examplt.com
 description: "Portfolio site of a developer, data hacker, makeshift designer, and science nut."
-baseurl: "/"
-url: "http://aerlinger.com"
+baseurl: "/personal_site"
+url: "https://aerlinger.github.io/"
 
 # Build settings
 markdown: kramdown
